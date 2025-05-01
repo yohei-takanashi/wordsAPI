@@ -1,0 +1,9 @@
+version: '3'
+services:
+  wordsapi-app:
+    build: .
+    volumes:
+      - .dockervenv:/src/.venv
+      - .:/src
+    ports:
+      - 8001:8000
